@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif , 'Tangerine';
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient( to bottom,#68EACC 0% , #497BE8 100%) !important;
+}
+.wrapper{
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+}
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+}
+.wrapper .inputField{
+display: flex;
+height: 45px;
+outline: none;
+margin: 20px 0;
+width: 100%;
+}
+.inputField input{
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+.inputField button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #8E49E8;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.6;
+    pointer-events: none;
+    margin-left: 5px;
+    pointer-events:none;
+    opacity: 0.6;
+}
+
+.inputField button.active{
+    pointer-events:auto;
+    opacity: 1;
+}
+.wrapper .todolist{
+    max-height: 250px;
+    overflow-y: auto;
+
+}
+.todolist li{
+    list-style: none;
+    height: 45px !important;
+    line-height: 45px !important;
+    position: relative;
+    background: #f2f2f2 !important;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+.todolist li span{
+    position: absolute;
+    right: -45px;
+    background: #e74c3c;
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    border-radius: 0 3px 3px 0 !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.todolist li:hover span{
+    right: 0px;
+}
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.footer button{
+    
+    border: none;
+    outline: none;
+    background: #8E49E8;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    padding: 6px 10px;
+}
